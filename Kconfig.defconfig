@@ -1,0 +1,5 @@
+config SHIELD_ORTHO_40
+	def_bool $(shields_list_contains, ortho_40)
+
+config ZMK_KEYBOARD_NAME
+	default "Ortho_40P"

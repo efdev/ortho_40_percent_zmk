@@ -1,0 +1,38 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+  
+	keymap {
+		compatible = "zmk,keymap";
+
+		default_layer {
+		bindings = < 
+	&kp TAB &kp Q &kp W &kp E &kp R &kp T &kp NUM_1 &kp U &kp I &kp O &kp P &kp BKSP
+	&kp ESC &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp NUM_1 &kp NUM_1
+	&kp LSFT &kp NUM_1 &kp X &kp C &kp V &kp B &kp N &kp M &kp CMMA &kp DOT &kp NUM_1 &kp RET
+	&trans &kp LCTL &kp LALT &kp LGUI &mo 1 &kp SPC &kp SPC &mo 2 &kp LARW &kp DARW &kp UARW &kp RARW
+	>;
+
+		};
+
+		lower_layer {
+		bindings = <
+	&kp NUM_1 &kp NUM_1 &kp NUM_1 &kp NUM_1 &kp NUM_1 &kp NUM_1 &kp NUM_1 &kp NUM_1 &kp NUM_1 &kp NUM_1 &kp NUM_1 &kp BKSP
+	&kp NUM_1 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp NUM_1 &kp NUM_1 &kp NUM_1 &kp NUM_1 NUM_1 &kp NUM_1
+	&trans &kp F7 &kp F8 &kp F9 &kp F10 &kp 11 &kp F12 &kp NUM_1 &kp NUM_1 &kp HOME &kp END &trans
+	&trans &trans &trans &trans &trans &trans &trans &trans &kp NUM_1 &kp NUM_1 &kp VOLD &cp M_PLAY
+	>;
+
+		};
+	
+		upper_layer {
+		bindings = < 
+	&kp GRAV &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
+	&kp NUM_1 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp NUM_1 &kp NUM_1 &kp NUM_1 &kp NUM_1 &kp NUM_1
+	&trans &kp F7 &kp F8 &kp F9 &kp F10 &kp 11 &kp F12 &kp HASH &kp NUM_1 &kp PGUP &kp PGDN &trans
+	&kp NUM_1 &kp NUM_1 &trans &trans &trans &trans &trans &trans &kp NUM_1 &kp NUM_1 &kp VOLU &cp M_NEXT
+	>;
+		};
+	};
+};

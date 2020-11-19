@@ -1,0 +1,6 @@
+if SHIELD_ORTHO_40
+
+config ZMK_KEYBOARD_NAME
+	default "efdev"
+
+endif
